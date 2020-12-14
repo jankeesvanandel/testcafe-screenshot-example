@@ -1,0 +1,17 @@
+{
+  "name": "testcafe-screenshot-example",
+  "version": "0.0.1",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "canvas": "2.6.1",
+    "resemblejs": "^3.2.5",
+    "testcafe": "1.10.0-rc.7",
+    "testcafe-browser-provider-browserstack": "^1.13.1",
+    "testcafe-reporter-html": "file:e2e/framework/testcafe-reporter-html"
+  },
+  "scripts": {
+    "e2e:clean": "rm -rf ./e2e/screenshots/diff/ && rm -rf ./e2e/screenshots/tests/",
+    "e2e:lint": "tslint --project e2e/tsconfig.json -c e2e/tslint.json 'e2e/**/*.ts'",
+    "e2e:bs": "cd e2e/ && yarn e2e:clean && node ./runner/browserStackRunner.js"
+  }
+}

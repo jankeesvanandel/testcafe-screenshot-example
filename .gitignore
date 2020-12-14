@@ -1,0 +1,6 @@
+/e2e/framework/testcafe-reporter-html/node_modules/
+/node_modules/
+/.reports/
+/testcafe-screenshot-example.iml
+/yarn.lock
+/.idea/
